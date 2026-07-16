@@ -371,7 +371,7 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 3px;
-    height: 100%;
+    height: calc(100% - 150px);
     background-color: var(--primary-color);
 }
 
