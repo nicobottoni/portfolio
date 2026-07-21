@@ -141,6 +141,14 @@ a:hover {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+
+    .nav-link::after {
+        display: none;
+    }
+
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
