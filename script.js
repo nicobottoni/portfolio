@@ -80,6 +80,14 @@ window.addEventListener('scroll', () => {
         }
     });
 
+    // Wenn Benutzer ganz unten ist:
+    if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 20
+    ) {
+        current = 'contact';
+    }
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').slice(1) === current) {
