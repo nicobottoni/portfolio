@@ -810,3 +810,357 @@ a:hover {
         width: 100%;
     }
 }
+
+/* ============================================
+Project Case Study Pages
+============================================ */
+
+.project-hero {
+    background: linear-gradient(135deg, var(--text-dark) 0%, #333333 100%);
+    color: white;
+    padding: 80px 20px;
+}
+
+.project-hero .container {
+    max-width: 1100px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.project-hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.project-lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 800px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.project-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+
+/* ============================================
+Case Study Layout
+============================================ */
+
+.case-study {
+    padding: 80px 20px;
+    background-color: var(--bg-white);
+}
+
+.case-study-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.case-study-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-card {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.sidebar-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.sidebar-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-card li {
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.compact-tags {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================================
+Case Study Content
+============================================ */
+
+.case-study-content {
+    max-width: 850px;
+}
+
+.case-section {
+    margin-bottom: 4rem;
+}
+
+.case-section h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.case-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.case-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.case-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.case-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.highlight-list li {
+    background-color: var(--bg-light);
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-radius: 8px;
+}
+
+.highlight-list li::before {
+    left: 1rem;
+    top: 1rem;
+}
+
+
+/* ============================================
+Process and Impact Cards
+============================================ */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.process-step {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+}
+
+.process-step span {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.process-step h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.process-step p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.impact-card {
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+.impact-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.impact-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* ============================================
+Privacy Note
+============================================ */
+
+.privacy-note {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.privacy-note h2 {
+    margin-top: 0;
+}
+
+
+/* ============================================
+Next Project Section
+============================================ */
+
+.project-next {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.project-next h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.project-next p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* ============================================
+Responsive Case Study Pages
+============================================ */
+
+@media (max-width: 900px) {
+    .case-study-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-sidebar {
+        position: static;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-hero {
+        padding: 60px 20px;
+    }
+
+    .project-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-lead {
+        font-size: 1.05rem;
+    }
+
+    .project-meta {
+        gap: 0.75rem;
+    }
+
+    .project-meta span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .case-study {
+        padding: 60px 20px;
+    }
+
+    .case-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-lead {
+        font-size: 1rem;
+    }
+
+    .sidebar-card,
+    .process-step,
+    .impact-card,
+    .privacy-note {
+        padding: 1.25rem;
+    }
+}
