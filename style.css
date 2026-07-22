@@ -305,7 +305,7 @@ a:hover {
 }
 
 .skill-card:hover {
-    transform: translateY(-30px);
+    transform: translateY(-30px) !important;
     box-shadow: var(--shadow-lg);
 }
 
