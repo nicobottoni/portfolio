@@ -305,7 +305,7 @@ a:hover {
 }
 
 .skill-card:hover {
-    transform: translateY(-30px) !important;
+    transform: translateY(-8px) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -482,7 +482,7 @@ a:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -572,7 +572,7 @@ a:hover {
 }
 
 .personal-work-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px) !important;
     background-color: var(--bg-white);
     box-shadow: var(--shadow-lg);
 }
