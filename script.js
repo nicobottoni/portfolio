@@ -23,18 +23,29 @@ navLinks.forEach(link => {
 // ============================================
 // Smooth Scrolling
 // ============================================
-
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 70; // Accounting for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+
+        const href = link.getAttribute('href');
+
+        // Nur interne Anker auf derselben Seite smooth scrollen
+        if (href.startsWith('#')) {
+            e.preventDefault();
+
+            const target = document.querySelector(href);
+
+            if (target) {
+                const offsetTop = target.offsetTop - 70;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         }
+
+        // Links wie ../index.html#about normal ausführen lassen
+        // Kein preventDefault für externe/interne Seitenlinks
     });
 });
 
