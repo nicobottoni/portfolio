@@ -38,13 +38,13 @@
                 <p class="eyebrow">Case Study</p>
                 <h1>Enterprise File Services</h1>
                 <p class="project-lead">
-                    Modernizing enterprise print infrastructure by transitioning from traditional on-premises print services to a cloud-oriented Microsoft Universal Print approach.
+                    Modernizing enterprise file services through large-scale data migration, storage standardization and unified access management across a multi-company environment.
                 </p>
                 <div class="project-meta">
-                    <span><i class="fas fa-cloud"></i> Microsoft Universal Print</span>
-                    <span><i class="fas fa-print"></i> Enterprise Print</span>
-                    <span><i class="fas fa-server"></i> Hybrid Infrastructure</span>
-                    <span><i class="fas fa-shield-alt"></i> Governance</span>
+                    <span><i class="fas fa-folder-tree"></i> File Service</span>
+                    <span><i class="fas fa-database"></i> NetApp</span>
+                    <span><i class="fas fa-network-wired"></i> DFS</span>
+                    <span><i class="fas fa-exchange-alt"></i> Data Migration</span>
                 </div>
             </div>
         </div>
@@ -56,22 +56,22 @@
                 <div class="sidebar-card">
                     <h3>Project Snapshot</h3>
                     <ul>
-                        <li><strong>Focus:</strong> Print modernization</li>
-                        <li><strong>Scope:</strong> Enterprise environment</li>
-                        <li><strong>Role:</strong> Technical implementation and coordination</li>
-                        <li><strong>Approach:</strong> Hybrid migration and standardization</li>
+                        <li><strong>Focus:</strong> Enterprise File Services</li>
+                        <li><strong>Scope:</strong> Multi-Company Environment</li>
+                        <li><strong>Role:</strong> Migration Planning and Implementation</li>
+                        <li><strong>Approach:</strong> Standardization and Controlled Cutover</li>
                     </ul>
                 </div>
                 <div class="sidebar-card">
                     <h3>Technologies</h3>
                     <div class="project-tags compact-tags">
-                        <span class="tag">Microsoft 365</span>
-                        <span class="tag">Universal Print</span>
-                        <span class="tag">Print Server</span>
-                        <span class="tag">PowerShell</span>
-                        <span class="tag">Intune</span>
-                        <span class="tag">Windows Client</span>
-                        <span class="tag">SAP VPSX/LRS</span>
+                        <span class="tag">NetApp</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">File Services</span>
+                        <span class="tag">NTFS</span>
+                        <span class="tag">DFS</span>
+                        <span class="tag">Robocopy</span>
+                        <span class="tag">Group Policy</span>
                     </div>
                 </div>
             </aside>
@@ -80,21 +80,24 @@
                 <section class="case-section">
                     <h2>Overview</h2>
                     <p>
-                        The objective of this project was to evaluate and support the transition from a traditional print server landscape to a more modern, cloud-connected print model based on Microsoft Universal Print. The focus was on reducing dependency on classic print server deployment methods, improving manageability and preparing the environment for a more scalable print service strategy.
+                        The objective of this initiative was to modernize enterprise file services by consolidating data storage, standardizing file share delivery and improving long-term scalability. The environment consisted of more than 50 companies with over 5,000 employees and approximately 180 TB of live business data.
+                    </p>
+                    <p>
+                        The solution was built around NetApp storage combined with Microsoft DFS to provide a consistent and transparent access layer for end users while simplifying backend storage management and future growth.
                     </p>
                 </section>
 
                 <section class="case-section">
                     <h2>Challenge</h2>
                     <p>
-                        Enterprise print environments often grow over many years and become difficult to standardize. Different printer models, site-specific configurations, legacy deployment methods and business-critical integrations can make cloud migration complex.
+                        Large-scale file service migrations require careful planning to ensure uninterrupted access to business-critical data. The challenge was to migrate live production data across multiple companies while minimizing operational impact and ensuring a seamless user experience.
                     </p>
                     <ul class="case-list">
-                        <li>Coexistence of existing on-premises print servers and cloud print services</li>
-                        <li>Validation of printer compatibility and driver behavior</li>
-                        <li>Client-side deployment and user experience on modern Windows devices</li>
-                        <li>Integration considerations for business-critical print flows</li>
-                        <li>Governance around printer naming, ownership and lifecycle</li>
+                        <li>Migration of approximately 180 TB of live production data</li>
+                        <li>More than 50 companies with individual requirements and file structures</li>
+                        <li>Ensuring data consistency throughout the migration process</li>
+                        <li>Maintaining access to business-critical information during cutover</li>
+                        <li>Updating file share mappings and access paths without user disruption</li>
                     </ul>
                 </section>
 
@@ -104,22 +107,22 @@
                         <div class="process-step">
                             <span>01</span>
                             <h3>Assessment</h3>
-                            <p>Reviewed existing print queues, printer models, deployment methods and known operational limitations.</p>
+                            <p>Reviewed existing file server structures, storage utilization, share configurations and business requirements across participating companies.</p>
                         </div>
                         <div class="process-step">
                             <span>02</span>
-                            <h3>Pilot</h3>
-                            <p>Validated Universal Print onboarding, connector behavior, Windows client discovery and user experience.</p>
+                            <h3>Design</h3>
+                            <p>Designed the target architecture based on NetApp storage and Microsoft DFS, providing a scalable backend with a unified access layer for end users.</p>
                         </div>
                         <div class="process-step">
                             <span>03</span>
-                            <h3>Standardization</h3>
-                            <p>Defined consistent naming, ownership, documentation and support processes for cloud-managed printers.</p>
+                            <h3>Migration</h3>
+                            <p>Performed data synchronization using Robocopy mirror jobs to continuously replicate production data to the new storage environment while maintaining data integrity.</p>
                         </div>
                         <div class="process-step">
                             <span>04</span>
-                            <h3>Rollout</h3>
-                            <p>Supported migration planning, troubleshooting, user communication and operational handover.</p>
+                            <h3>Cutover</h3>
+                            <p>Executed a controlled migration by updating DFS targets and Group Policy configurations, ensuring users were automatically redirected to the new environment with minimal disruption.</p>
                         </div>
                     </div>
                 </section>
@@ -127,31 +130,32 @@
                 <section class="case-section">
                     <h2>Key Contributions</h2>
                     <ul class="case-list highlight-list">
-                        <li>Supported the technical validation of Microsoft Universal Print in an enterprise context</li>
-                        <li>Analyzed printer onboarding, connector behavior and client-side visibility issues</li>
-                        <li>Helped identify configuration requirements for modern Windows clients</li>
-                        <li>Documented troubleshooting findings and repeatable implementation steps</li>
-                        <li>Contributed to the transition from classic print server management to cloud-oriented print operations</li>
+                        <li>Planned and coordinated a large-scale enterprise file service migration</li>
+                        <li>Designed and implemented a NetApp and DFS-based target architecture</li>
+                        <li>Established Robocopy mirror processes for data synchronization and migration readiness</li>
+                        <li>Managed cutover activities while minimizing operational risk and downtime</li>
+                        <li>Updated Group Policy configurations to redirect users to the new DFS structure</li>
+                        <li>Ensured data integrity and business continuity throughout the transition</li>
                     </ul>
                 </section>
 
                 <section class="case-section">
                     <h2>Outcome</h2>
                     <p>
-                        The project improved understanding of cloud print readiness, clarified operational requirements and created a foundation for a modern enterprise print strategy. The work helped reduce uncertainty around Universal Print adoption and established a clearer path for migrating printers and users in a controlled way.
+                        The project successfully delivered a modernized file services platform with improved scalability, simplified share management and a consistent user experience. Through careful planning and staged synchronization, the migration was completed without data loss while supporting business continuity across all affected organizations.
                     </p>
                     <div class="impact-grid">
                         <div class="impact-card">
-                            <h3>Improved Readiness</h3>
-                            <p>Better visibility into printer compatibility, connector setup and client requirements.</p>
+                            <h3>Storage Standardization</h3>
+                            <p>Unified storage architecture based on NetApp volumes and structured data organization.</p>
                         </div>
                         <div class="impact-card">
-                            <h3>Operational Clarity</h3>
-                            <p>Clearer troubleshooting steps, documentation and support responsibilities.</p>
+                            <h3>Seamless User Experience</h3>
+                            <p>Microsoft DFS provided a single access path while transparently redirecting users to the new backend infrastructure.</p>
                         </div>
                         <div class="impact-card">
-                            <h3>Modern Print Strategy</h3>
-                            <p>Prepared the environment for a more scalable and cloud-driven print management model.</p>
+                            <h3>Successful Enterprise Migration</h3>
+                            <p>Approximately 180 TB of live data migrated across more than 50 companies without data loss.</p>
                         </div>
                     </div>
                 </section>
